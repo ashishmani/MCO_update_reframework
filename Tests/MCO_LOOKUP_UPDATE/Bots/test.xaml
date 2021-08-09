@@ -1,0 +1,148 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="test" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1221,859" sap2010:WorkflowViewState.IdRef="test_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="36">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.CV</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.Shared.ObjectLibrary</x:String>
+      <x:String>UiPath.Vision.OCR</x:String>
+      <x:String>UiPath.OCR.Contracts</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.CV.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.OCR.Activities</x:String>
+      <x:String>UiPath.OCR.Contracts.Activities</x:String>
+      <x:String>UiPath.CV.Activities.Interfaces</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="36">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.CV</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Contracts</AssemblyReference>
+      <AssemblyReference>UiPath.CV.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="test" sap:VirtualizedContainerService.HintSize="502,794" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:Boolean" Name="mem" />
+      <Variable x:TypeArguments="x:String" Name="Contracted_Service" />
+      <Variable x:TypeArguments="ui:UiElement" Name="ll" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence sap:VirtualizedContainerService.HintSize="460,702" sap2010:WorkflowViewState.IdRef="Sequence_4">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="x:Boolean" Name="checkReassign" />
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:RetryScope DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="418,610" sap2010:WorkflowViewState.IdRef="RetryScope_1">
+        <ui:RetryScope.ActivityBody>
+          <ActivityAction>
+            <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="376,345" sap2010:WorkflowViewState.IdRef="Sequence_3">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:ClickImage DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" ContinueOnError="True" DisplayName="clickto open" sap:VirtualizedContainerService.HintSize="334,154" sap2010:WorkflowViewState.IdRef="ClickImage_1" KeyModifiers="None" MouseButton="BTN_LEFT">
+                <ui:ClickImage.CursorPosition>
+                  <ui:CursorPosition Position="Center">
+                    <ui:CursorPosition.OffsetX>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:CursorPosition.OffsetX>
+                    <ui:CursorPosition.OffsetY>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:CursorPosition.OffsetY>
+                  </ui:CursorPosition>
+                </ui:ClickImage.CursorPosition>
+                <ui:ClickImage.Image>
+                  <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAACQAAAAPCAYAAACMa21tAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAD9SURBVEhL7ZO9EcMgDIU9EsMwC6MwiSehdOeSzh0l4YH5kQwJd8klLlK8OyzE02cJFmOMv5P+QK9EgbT0flmKnFpJ8tHsQXZFXF/ih27iUjMPcZ7rqwBtSgQz6fewzrKCGhKzCI98FO4VSXEn6N40kGUHo1blXSiav7nZDJDVwUOoEi+5+CHWPSgBnYXRFZ6ALtUR1MKxo6FQAmpHln1q/i47Hp8Bel6Ynm3jYR27NMqtKiMD0CWRgM4UHsfRUafUPFC+1O0mulNf2ntAEL75JecqQFCCqmOhz/554eu5Tn58mWcM6zDGjXgxoG8qX/TbAB2DR/QzoJFuBmT8A0DV0TYNJ9pkAAAAAElFTkSuQmCC" />
+                </ui:ClickImage.Image>
+                <ui:ClickImage.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="eb25d769-7740-409a-b248-27bd8f570722" Selector="&lt;wnd app='wfica32.exe' cls='Transparent Windows Client' title='Practice Manager - NH001 ConvenientMD - \\Remote' /&gt;" TimeoutMS="3000" WaitForReady="INTERACTIVE" />
+                </ui:ClickImage.Target>
+              </ui:ClickImage>
+              <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;'dd&quot;]" />
+            </Sequence>
+          </ActivityAction>
+        </ui:RetryScope.ActivityBody>
+        <ui:RetryScope.Condition>
+          <ActivityFunc x:TypeArguments="x:Boolean">
+            <ui:ImageFound DisplayName="Image Exists 'wfica32.exe'" Found="[checkReassign]" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ImageFound_1">
+              <ui:ImageFound.Image>
+                <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAAMEAAAAwCAYAAACojB4gAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAVASURBVHhe7Zw7cuQgEIbnOD6BLuLAqcqBA1/CoQ6ju0zqyIkzJ665gZbmIZqmQYx2tlYz/MFXHjXQ4tE/IJfE6XK5LCU+Pz9VOwCPBEQAugciAN0DEYDugQhA90AEoHsgAtA9EAHoHogAdA9EALoHIgDds08E87icTifPuMzGNo/hOmWYzklZm2+cc1ux7LyMwj7OVM7bha/AeRpM3mGZzizvFT5GX3azXUpfSF/g2FwvgvO0DHywzfVkAyoSAojbLFR2GJdxKKQb8rIUqFp+Zx8KvlzQh7QtH0EUES1/ZmvoC3AMPj4+VDtxvQho5hum6oynB5ybnWkGDX9lOpGXrQfwOCq+qI6jEdtaru5jmkmcU5Km5c9sDX0BjsHT09Py9vampu3aDtEsWwpiQg+4yzKFWduuCGnQBfKyGwF8pr/pNsTdh5fb8uG2PbxNWn7dVu8LcAxIBMTz8/Py9fWVpO1+MJ7MFoL2wXIbQagB5wP/bK/PURA8jyEvS4Ea9tx8350G8FqP9T5SBHUf5d8RzUbU+gIcgyAC4vX1NUnbLQKL3RO37afXrRD99te1B9Jo0wMysbOVJQpiO6gzu91GUZ30/LoPT6EvwDEIAnh5eVm+v7+TtL8TgUELZj2A+EwcSLcxLp8s2xLAfmXxe3u32vD0Fh8OmtXHWc+v+4iUhA3+PySA9/f35efnJ0vb8WA8ZUEj98RZsPgHSBecERdwqS0PtMYApnsYYcW68PRGH4Sf0eN/liJZ3oa+AMeA/jv0+/trkWm7H4zX2bxhSyMfOgNtq4gL1Lh6BF95AE8DX1lyEbT4IGy9FLuWd6svwPH56+0QAPcORAC6ByIA3QMRgO6BCED3QASgeyAC0D0QAegeiAB0D0QAugciAN0DEYDugQhA9+wSgfw2gL8OXUsj7OkN2tuW/lVoB3sbVLXT25/iW4T1FWiP/8iGsHVqeNs12pkfg/ahTKkdJZ+Bcrl2f+FLNrWdDLXvRR4iecM36e8+Xg3fKQI2MLbTeHBWgsB+AaacNmEDmAW1ubanNpTsUgQ2X+pzHtM6tZ4okdllHYKtcGrGrvYbmupo6yLyGFvsk8q9BWpeO5ap/VG+kbjtaRMG2YHxuj4Q9J4+dWj4u6ZR55sZLQm0ml2IQPs4J+Lr1HiihGaX18V2KHk5m+U26tjUzsK9JVpe1b82Cdwh9GXZjU+bYB3oAzX/pDGndtoELeUyMMp2JoLNQYp1kh/3lOqatU9sU+rt0H0SLeWKdbyinXp6Spa34r90KMI9Eb4xvtlpE8neMwkQGgiWxjvVD7wTi37aRNjrytkotwsRrH7DV2Euv/PPg6P0O6XYBmKjHcVAbC5XqKNoZw7lrdRbkNWz4r++At0HQQTETU6bSAYm6exyYK1bAfrtr7UHQeeztCwHO92HicD8loOnBhKlrTN7ua6J3fqP11vt2Nv+zToW2hkpt0cjy1vxTyJo9XtUggBudtoE78AwuC6tFlh8lqrPVjJAcjvdJ5TV7xltebqb2Wp11fKHtFo79ra/pY60eiiTw0r53hpaXtW/F4er5/1CArjdaRMG2YHxujAQyXNDZO300qkNxdMc6D5xYKw4xEBV62QHloJQqashyc9Xgq127G1/ax3Jj7ElgWry3fa/Q7IftWey++MfnDaRdqANQjPIYSD4bEcdKB/2knLrzB7LpNsEzU75xezkAyQQ76cHhxOOHjSyDSFPWzv2tr+xjqs4PKu49HtzfxztfhbRj9nK8IDsEgEAjwREALoHIgDdAxGA7oEIQPdABKBzLssf8dDKMW7z5/8AAAAASUVORK5CYII=" />
+              </ui:ImageFound.Image>
+              <ui:ImageFound.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="01d002dc-8c5f-4271-80c4-c6a5104f702d" Selector="&lt;wnd app='wfica32.exe' cls='Transparent Windows Client' idx='*' /&gt;" TimeoutMS="3000" WaitForReady="INTERACTIVE" />
+              </ui:ImageFound.Target>
+            </ui:ImageFound>
+          </ActivityFunc>
+        </ui:RetryScope.Condition>
+      </ui:RetryScope>
+    </Sequence>
+  </Sequence>
+</Activity>
